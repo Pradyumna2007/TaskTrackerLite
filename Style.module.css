@@ -1,0 +1,205 @@
+/* ******************Task List***************************** */
+.tasksOuterContainer {
+  flex: 5;
+  padding: var(--containerPadding);
+  background-color: var(--tileBackgroundColor);
+  height: 48rem;
+  overflow: scroll;
+}
+.tasksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  gap: 1rem;
+  background-color: var(--tileBackgroundColor);
+}
+/* ******************Task***************************** */
+.taskContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgb(182, 186, 182);
+  background-color: rgb(255, 255, 255);
+}
+
+.titleContainer {
+  /* border: 2px solid rgb(160, 33, 33); */
+  flex: 5;
+}
+
+.statusContainer {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(166, 222, 117);
+}
+/* TaskView************************************ */
+.taskViewContainer {
+  display: flex;
+  justify-content: start;
+  align-items: space-between;
+  gap: 1rem;
+  padding: var(--containerPadding);
+  width: 50rem;
+  height: 20rem;
+  /* border-radius: 10px; */
+  /* border: 2px solid red; */
+  background-color: rgb(247, 248, 249);
+}
+.taskViewDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+  flex: 3;
+}
+.taskViewtitleContainer {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.taskViewDivider {
+  /* width: 10px; */
+  /* color: rgb(171, 169, 169); */
+  border: 1px solid rgb(171, 169, 169);
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 0;
+}
+.taskViewDetailsOuterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.taskViewDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  flex: 1;
+}
+.taskViewStatusContainer {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.taskViewStatusDropdownContainer {
+  width: 11rem;
+}
+.taskViewDetailsTitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.inProgress {
+  background-color: rgb(30, 196, 141);
+}
+.taskViewDetailsButtonContainer {
+  display: flex;
+  gap: 1rem;
+}
+.taskViewDetailsButtonContainer > button {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.taskViewSaveButton {
+  background-color: rgb(143, 214, 84);
+}
+.taskViewCloseButton {
+  background-color: rgb(78, 165, 236);
+}
+
+/* Modal************************************ */
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(106, 104, 104, 0.559);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+/* FilterTask************************************ */
+.filterTaskOuterContainer {
+  flex: 1;
+  padding: var(--containerPadding);
+  background-color: var(--tileBackgroundColor);
+  height: 48rem;
+  /* border: 2px solid black; */
+}
+.filterTaskContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+
+  /* border: 2px solid rgb(131, 9, 9); */
+  /* position: fixed; */
+  /* left: 0; */
+  /* top: 5.5rem; */
+}
+
+/* Add Task************************************ */
+.addTaskButton {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  /* background-color: aqua; */
+  /* background-image: var(--linarBackgroudColor); */
+  background-image: linear-gradient(45deg, #a3ec4ff3, #e8ee93);
+  box-shadow: 5px 5px 5px grey;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: white;
+}
+.formContainer > input,
+textarea,
+select {
+  width: 30rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+  background-color: rgba(205, 203, 203, 0.566);
+  /* padding: 5px; */
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.formContainer > textarea {
+  height: 8rem;
+  width: 30rem;
+}
+.formContainer > select {
+  width: 30rem;
+}
+.formContainer > button {
+  width: 30rem;
+  height: 2rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  /* background-color: black; */
+  background-image: linear-gradient(45deg, #a3ec4ff3, #e8ee93);
+}
+
+.formContainer > label {
+  font-size: 1.3rem;
+  color: #4e4e4e;
+}
+
+.formContainer > * {
+  width: 100%;
+}

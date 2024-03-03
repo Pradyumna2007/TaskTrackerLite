@@ -1,0 +1,20 @@
+:root {
+  --containerPadding: 1rem;
+  --tileBackgroundColor: rgba(201, 205, 205, 0.595);
+  --linarBackgroudColor:linear-gradient(45deg, #7603cf, #05ddcc);
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: black; */
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
